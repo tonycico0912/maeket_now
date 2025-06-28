@@ -1,7 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 
 const PodcastSection: React.FC = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   // 실제 PDF 파일명으로 수정 (큰따옴표 사용)
@@ -65,8 +64,6 @@ const PodcastSection: React.FC = () => {
               height: '50px'
             }}
             src={`/pod/${encodeURIComponent(mp3FileName)}`}
-            onPlay={() => setIsPlaying(true)}
-            onPause={() => setIsPlaying(false)}
           >
             브라우저가 오디오 재생을 지원하지 않습니다.
           </audio>

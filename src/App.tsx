@@ -1,4 +1,3 @@
-import React from 'react';
 import PodcastSection from './components/PodcastSection';
 import CommunitySection from './components/CommunitySection';
 import WebinarBanner from './components/WebinarBanner';
